@@ -1,0 +1,45 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+  <!-- Hex Gold -->
+  <linearGradient id="goldHex" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#fff6c2"></stop>
+    <stop offset="50%" stop-color="#ffd700"></stop>
+    <stop offset="100%" stop-color="#8a6b00"></stop>
+  </linearGradient>
+
+  <!-- High Reflective Metallic Gold for T -->
+  <linearGradient id="metalGold" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#ffffff"></stop>
+    <stop offset="20%" stop-color="#fff4b5"></stop>
+    <stop offset="45%" stop-color="#ffd700"></stop>
+    <stop offset="75%" stop-color="#c99700"></stop>
+    <stop offset="100%" stop-color="#7a5a00"></stop>
+  </linearGradient>
+
+  <!-- Shine Highlight -->
+  <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="rgba(255,255,255,0.9)"></stop>
+    <stop offset="100%" stop-color="rgba(255,255,255,0)"></stop>
+  </linearGradient>
+
+  <!-- Soft Premium Glow -->
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feDropShadow dx="0" dy="0" stdDeviation="0.8" flood-color="#ffd700" flood-opacity="0.8"></feDropShadow>
+  </filter>
+
+</defs>
+
+<!-- Background -->
+<rect width="32" height="32" rx="6" fill="#0b0b0f"></rect>
+
+<!-- Outer Hex -->
+<polygon points="16,3 27,9 27,23 16,29 5,23 5,9" fill="none" stroke="url(#goldHex)" stroke-width="2"></polygon>
+
+<!-- Inner Hex -->
+<polygon points="16,8 23,12 23,20 16,24 9,20 9,12" fill="url(#goldHex)" opacity="0.9"></polygon>
+
+<!-- Metallic T -->
+<path d="M13 14 H19 M16 14 V20" stroke="url(#metalGold)" stroke-width="2" stroke-linecap="round" filter="url(#glow)"></path>
+
+</svg>
